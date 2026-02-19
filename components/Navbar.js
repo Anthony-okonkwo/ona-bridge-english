@@ -12,7 +12,13 @@ export default function Navbar() {
     <nav className={styles.nav}>
       {/* --- Main Navbar (Always Visible) --- */}
       <div className={styles.logo}>
-        <div className={styles.logoIcon}>O</div>
+        <div className={styles.logoIcon}>
+  <img 
+    src="/pics/logo.jpg" 
+    alt="ONA Bridge Logo" 
+    className={styles.logoImg} 
+  />
+</div>
         <div className={styles.logoText}>
           <strong>ONA Bridge English™</strong>
           <span>Free English for NY</span>
@@ -38,7 +44,13 @@ export default function Navbar() {
         {/* Header inside the overlay - This contains the ONLY X button now */}
         <div className={styles.menuHeader}>
           <div className={styles.logo}>
-            <div className={styles.logoIcon}>O</div>
+            <div className={styles.logoIcon}>
+  <img 
+    src="/pics/logo.jpg" 
+    alt="ONA Bridge Logo" 
+    className={styles.logoImg} 
+  />
+</div>
             <div className={styles.logoText}>
               <strong>ONA Bridge English™</strong>
               <span>Free English for NY</span>

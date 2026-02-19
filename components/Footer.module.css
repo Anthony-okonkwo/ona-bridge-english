@@ -34,6 +34,11 @@
   transform: scale(1.03);
 }
 
+.links{
+  color: white;
+  text-decoration: none;
+}
+
 /* --- Main Footer --- */
 .footer {
   background-color: #00263b; /* Deep Navy from your screenshot */

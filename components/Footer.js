@@ -22,24 +22,24 @@ export default function Footer() {
           <div className={styles.footerCol}>
             <h4>About</h4>
             <ul>
-              <li>About the Program</li>
-              <li>How It Works</li>
-              <li>Partner Organizations</li>
+              <li><Link href="/about" className={styles.links}>About the Program</Link></li>
+              <li><Link href="/how-it-works" className={styles.links}>How It Works</Link></li>
+              <li><Link href="/partners" className={styles.links}>Partner Organizations</Link></li>
             </ul>
           </div>
           <div className={styles.footerCol}>
             <h4>Learning</h4>
             <ul>
-              <li>Courses</li>
-              <li>Coaching & Support</li>
-              <li>Get Started</li>
+              <li><Link href="/courses" className={styles.links}>Courses</Link></li>
+              <li><Link href="/coaching" className={styles.links}>Coaching & Support</Link></li>
+              <li> <Link href="/start" className={styles.links}>Get Started</Link></li>
             </ul>
           </div>
           <div className={styles.footerCol}>
             <h4>Resources</h4>
             <ul>
-              <li>Accessibility</li>
-              <li>Privacy Policy</li>
+              <li><Link href="/accessibility" className={styles.links}>Accessibility</Link></li>
+              <li><Link href="/privacy" className={styles.links}>Privacy Policy</Link></li>
               <li>Contact</li>
             </ul>
           </div>
