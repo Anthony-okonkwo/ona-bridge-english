@@ -159,10 +159,11 @@ export default function PartnersPage() {
               <label>Organization Type *</label>
               <select className={styles.selectField}>
                 <option>Select type...</option>
-                <option>Library</option>
-                <option>Non-Profit / NGO</option>
-                <option>Government Agency</option>
-                <option>School / Education</option>
+                <option>Community-based Organization</option>
+                <option>Public library</option>
+                <option>Workforce development</option>
+                <option>Immigrant services</option>
+                <option>Adult education</option>
                 <option>Other</option>
               </select>
             </div>
@@ -189,7 +190,8 @@ export default function PartnersPage() {
                 <option>1 - 50</option>
                 <option>51 - 200</option>
                 <option>201 - 500</option>
-                <option>500+</option>
+                <optio>501 - 1000</optio>
+                <option>1000+</option>
               </select>
             </div>
 

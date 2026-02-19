@@ -28,7 +28,7 @@ export default function StartPage() {
   };
 
   // The submit logic
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => { 
     e.preventDefault();
     setIsSubmitting(true);
 
@@ -39,14 +39,32 @@ export default function StartPage() {
       learningMethod: method
     };
 
-    // 2. Log it (This is where our NestJS API call will go!)
-    console.log("🚀 Payload ready for NestJS Backend:", payload);
+    try {
+      // 2. Send the data to our next.js API
+      const response = await fetch('/api/learners', {
+        method: 'POST',
+        headers: { 
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(payload),
+      });
 
-    // 3. Simulate a quick network request, then show success screen
-    setTimeout(() => {
-      setIsSubmitting(false);
+      if (!response.ok){
+        throw new Error('Network response was not ok');
+      }
+
+      const result = await response.json();
+      console.log("Server responded:", result);
+      
+      // 3. Show the success screen! (
       setIsSubmitted(true);
-    }, 800);
+
+    } catch (error) {
+      console.error("❌ Submission failed:", error);
+      alert("Something went wrong. Please try again.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
