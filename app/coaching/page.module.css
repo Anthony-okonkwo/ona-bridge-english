@@ -1,0 +1,395 @@
+.pageWrapper {
+  background-color: #F8FBFC;
+  min-height: 100vh;
+}
+
+/* --- HEADER --- */
+.header {
+  background: linear-gradient(180deg, #0F4C5C 0%, #08333E 100%);
+  padding: 4rem 5% 5rem;
+  text-align: center;
+  color: white;
+}
+
+.title {
+  font-size: 2.2rem;
+  margin-bottom: 0.8rem;
+  font-weight: 700;
+}
+
+.subtitle {
+  opacity: 0.9;
+  font-size: 1.1rem;
+}
+
+.sectionTitle {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 3rem;
+  font-weight: 700;
+}
+
+/* --- 3 METHODS --- */
+.methodsSection {
+  max-width: 1000px;
+  margin: -3rem auto 5rem; /* Overlap header */
+  padding: 0 5%;
+}
+
+.methodsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.methodCard {
+  background: white;
+  padding: 2.5rem 1.5rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #f0f0f0;
+}
+
+.iconCircle {
+  background-color: #E0F7FA;
+  color: #0F4C5C;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.methodCard h3 {
+  color: #333;
+  margin-bottom: 0.8rem;
+  font-size: 1.3rem;
+}
+
+.methodDesc {
+  color: #666;
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.methodList {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+  width: 100%;
+}
+
+.methodList li {
+  font-size: 0.85rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+  padding-left: 1rem;
+}
+
+/* --- SCHEDULE --- */
+.scheduleSection {
+  background-color: #E3F2FD;
+  padding: 5rem 5%;
+  text-align: center;
+}
+
+.scheduleContainer {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto 1.5rem;
+}
+
+.timeCard {
+  background: white;
+  padding: 1.5rem 2rem;
+  border-radius: 50px; /* Pill shape */
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+}
+
+.clockIcon {
+  color: #0F4C5C;
+}
+
+.timeInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.timeInfo strong {
+  color: #0F4C5C;
+  font-size: 0.95rem;
+}
+
+.timeInfo span {
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.timezoneNote {
+  color: #666;
+  font-size: 0.85rem;
+  margin-top: 1rem;
+}
+
+/* --- LANGUAGES --- */
+.langSection {
+  padding: 5rem 5%;
+  text-align: center;
+}
+
+.langHeader {
+  max-width: 700px;
+  margin: 0 auto 3rem;
+}
+
+.sectionIcon {
+  color: #0F4C5C;
+  margin-bottom: 1rem;
+}
+
+.langHeader h2 {
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.langGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.langBadge {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  color: #333;
+  transition: all 0.2s;
+}
+
+.langBadge:hover {
+  background-color: #F0F9FB;
+  border-color: #0F4C5C;
+  color: #0F4C5C;
+}
+
+/* --- DEAF SUPPORT (Smile Image) --- */
+.accessSupportSection {
+  padding: 5rem 5%;
+  background: white;
+}
+
+.accessContainer {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  background-color: #E0F2F1; /* Light teal bg */
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 3rem;
+}
+
+.accessText {
+  flex: 1;
+}
+
+.headsetIcon {
+  color: #0F4C5C;
+  margin-bottom: 1rem;
+}
+
+.accessText h2 {
+  font-size: 1.5rem;
+  color: #0F4C5C;
+  margin-bottom: 1rem;
+}
+
+.checkList {
+  list-style: none;
+  padding: 0;
+  margin-top: 1.5rem;
+}
+
+.checkList li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 0.8rem;
+  color: #333;
+}
+
+.checkList li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #0F4C5C;
+  font-weight: bold;
+}
+
+.accessImageSide {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+/* Visual Placeholder for the SMILE tiles */
+.imagePlaceholder {
+  width: 100%;
+  height: 250px;
+  background-color: #A7D7C5; /* Soft Green */
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.smileTiles {
+  display: flex;
+  gap: 10px;
+}
+
+.smileTiles span {
+  background: #D4A373; /* Wood color */
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-family: serif;
+  color: #333;
+  border-radius: 4px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+
+/* --- FAQ --- */
+.faqSection {
+  padding: 5rem 5%;
+  background: white;
+}
+
+.faqContainer {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faqItem {
+  border: 1px solid #eee;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+.faqQuestion {
+  width: 100%;
+  background: white;
+  border: none;
+  padding: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #333;
+  cursor: pointer;
+}
+
+.faqAnswer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  background-color: #f9f9f9;
+}
+
+.faqAnswer p {
+  padding: 1.2rem;
+  margin: 0;
+  color: #666;
+  line-height: 1.5;
+}
+
+.faqItem.open .faqAnswer {
+  max-height: 200px; /* Expands to show text */
+}
+
+/* --- CTA --- */
+.ctaSection {
+  text-align: center;
+  padding: 5rem 5%;
+  background-color: #F8FBFC;
+}
+
+.ctaSection h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.ctaSection p {
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.ctaBtn {
+  display: inline-block;
+  background-color: #F4A261;
+  color: white;
+  padding: 16px 45px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: transform 0.2s;
+}
+
+.ctaBtn:hover {
+  transform: translateY(-2px);
+  background-color: #e08e4d;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .scheduleContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .timeCard {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .langGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .accessContainer {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .checkList li {
+    text-align: left;
+    display: inline-block;
+  }
+}

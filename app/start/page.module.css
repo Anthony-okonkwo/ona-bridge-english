@@ -1,0 +1,224 @@
+.pageWrapper {
+  background-color: #F9FAFB;
+  min-height: 100vh;
+}
+
+/* --- HEADER SECTION --- */
+.header {
+  background: linear-gradient(180deg, #0F4C5C 0%, #09343F 100%);
+  padding: 4rem 5% 6rem; /* Extra bottom padding for overlap effect if needed */
+  text-align: center;
+  color: white;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  opacity: 0.9;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.badges {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.orangeBadge {
+  background-color: #F4A261;
+  color: #003049;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+.blueBadge {
+  background-color: #003049;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 0.8rem;
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+/* --- FORM SECTION --- */
+.formSection {
+  display: flex;
+  justify-content: center;
+  padding: 0 5% 5rem;
+  margin-top: -2rem; /* Pulls form up slightly closer to header if desired */
+}
+
+.formCard {
+  background: white;
+  width: 100%;
+  max-width: 600px;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  border: 1px solid #eee;
+}
+
+.inputGroup {
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.inputGroup label {
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.textInput, .selectInput {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.selectInput {
+  background-color: white;
+}
+
+.helperText {
+  font-size: 0.8rem;
+  color: #666;
+  margin-top: 5px;
+}
+
+/* --- RADIO CARDS (NY Question & Methods) --- */
+.radioCard, .methodCard {
+  display: flex;
+  align-items: center; /* Vertically center content */
+  gap: 15px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: all 0.2s;
+  background: white;
+}
+
+.methodCard {
+  align-items: flex-start; /* Align method text to top for multi-line */
+}
+
+.radioCard:hover, .methodCard:hover {
+  background-color: #f9f9f9;
+}
+
+/* Selected State */
+.selected {
+  border-color: #0F4C5C;
+  background-color: #F0F9FB;
+  box-shadow: 0 0 0 1px #0F4C5C inset;
+}
+
+/* Custom Radio Circle */
+.radioCircle {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #aaa;
+  border-radius: 50%;
+  flex-shrink: 0;
+  position: relative;
+  margin-top: 2px; /* Slight optical adjustment */
+}
+
+.activeRadio {
+  border-color: #0F4C5C;
+}
+
+.activeRadio::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #0F4C5C;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.methodText strong {
+  display: block;
+  color: #333;
+  margin-bottom: 3px;
+}
+
+.methodText p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #666;
+  line-height: 1.4;
+}
+
+/* --- PRIVACY & SUBMIT --- */
+.privacyBox {
+  background-color: #E8F4F8;
+  padding: 15px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  color: #0F4C5C;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+.privacyBox a {
+  color: #0F4C5C;
+  text-decoration: underline;
+}
+
+.submitBtn {
+  width: 100%;
+  background-color: #F4A261;
+  color: white;
+  padding: 16px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.submitBtn:hover {
+  background-color: #e08e4d;
+  transform: translateY(-2px);
+}
+
+.helpText {
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.helpText a {
+  color: #0F4C5C;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 600px) {
+  .formCard {
+    padding: 1.5rem;
+  }
+  
+  .title {
+    font-size: 2rem;
+  }
+}

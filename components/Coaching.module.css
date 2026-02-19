@@ -1,0 +1,115 @@
+.coachingSection {
+  padding: 5rem 5%;
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  background-color: white;
+}
+
+.imageSide {
+  flex: 1;
+}
+
+.coachingImg {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.textSide {
+  flex: 1;
+}
+
+.textSide h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.textSide p {
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.contactList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #0F4C5C;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.viewAllBtn {
+  background-color: #0F4C5C;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 5px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+.coachBtn {
+  background-color: #003049;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 5px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #003049;
+  color: white;
+  padding: 5rem 5% 2rem;
+}
+
+.footerGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  padding-bottom: 3rem;
+  margin-bottom: 2rem;
+}
+
+.footerCol h4 {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.footerCol ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footerCol ul li {
+  margin-bottom: 0.8rem;
+  font-size: 0.9rem;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.footerCol ul li:hover {
+  opacity: 1;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 0.8rem;
+  opacity: 0.6;
+}
+
+@media (max-width: 900px) {
+  .coachingSection { flex-direction: column; }
+  .footerGrid { grid-template-columns: repeat(2, 1fr); }
+}

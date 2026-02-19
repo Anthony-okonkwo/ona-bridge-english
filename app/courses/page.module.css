@@ -1,0 +1,265 @@
+.pageWrapper {
+  background-color: white;
+  min-height: 100vh;
+}
+
+/* --- HEADER --- */
+.header {
+  background: linear-gradient(180deg, #0F4C5C 0%, #08333E 100%);
+  padding: 4rem 5% 5rem;
+  text-align: center;
+  color: white;
+}
+
+.title {
+  font-size: 2.2rem;
+  margin-bottom: 0.8rem;
+  font-weight: 700;
+}
+
+.headerSubtitle {
+  opacity: 0.9;
+  font-size: 1.1rem;
+}
+
+/* --- TABS & LIST SECTION --- */
+.contentSection {
+  max-width: 1000px;
+  margin: -2.5rem auto 4rem; /* Overlap effect */
+  padding: 0 5%;
+}
+
+.tabsContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  background: white;
+  padding: 1rem;
+  border-radius: 50px; /* Pill shape container */
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  margin-bottom: 3rem;
+}
+
+.tabBtn {
+  background: transparent;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 25px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #555;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.tabBtn:hover {
+  color: #0F4C5C;
+  background-color: #f0f9fb;
+}
+
+.tabBtn.active {
+  background-color: #0F4C5C;
+  color: white;
+  box-shadow: 0 4px 10px rgba(15, 76, 92, 0.3);
+}
+
+/* --- COURSE LIST --- */
+.courseListWrapper {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.categoryTitle {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.categorySubtitle {
+  color: #666;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+
+.courseGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.courseCard {
+  background: white;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 1.5rem;
+  transition: transform 0.2s, border-color 0.2s;
+  cursor: pointer;
+}
+
+.courseCard:hover {
+  transform: translateY(-2px);
+  border-color: #0F4C5C;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.cardContent h3 {
+  margin: 0 0 0.5rem 0;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.cardMeta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.levelTag {
+  color: #0F4C5C;
+  font-weight: 600;
+}
+
+.dot {
+  color: #ccc;
+}
+
+/* --- CERTIFICATES SECTION --- */
+.certSection {
+  background-color: #E8F4F8; /* Light blue bg */
+  padding: 5rem 5%;
+}
+
+.certContent {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.certText {
+  flex: 1;
+}
+
+.certText h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.certDesc {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.checkList {
+  list-style: none;
+  padding: 0;
+}
+
+.checkList li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 0.8rem;
+  color: #444;
+  font-size: 0.95rem;
+}
+
+.checkList li svg {
+  color: #0F4C5C;
+}
+
+/* Badges Grid */
+.badgesGrid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.badgeItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.badgeCircle {
+  width: 70px;
+  height: 70px;
+  background-color: #0F4C5C;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  box-shadow: 0 5px 15px rgba(15, 76, 92, 0.3);
+}
+
+.badgeItem span {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #333;
+}
+
+/* --- CTA BOTTOM --- */
+.ctaSection {
+  text-align: center;
+  padding: 5rem 5%;
+  background: white;
+}
+
+.ctaSection h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.ctaSection p {
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.ctaBtn {
+  display: inline-block;
+  background-color: #F4A261;
+  color: white;
+  padding: 16px 45px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.1rem;
+  transition: transform 0.2s;
+}
+
+.ctaBtn:hover {
+  transform: translateY(-2px);
+  background-color: #e08e4d;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .certContent {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .checkList li {
+    justify-content: center; /* Center list on mobile */
+  }
+
+  .tabsContainer {
+    flex-direction: row; /* Keep row but wrap */
+    border-radius: 12px; /* Less round on mobile to fit nicely */
+  }
+}

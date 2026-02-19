@@ -1,0 +1,92 @@
+.section {
+  padding: 5rem 5%;
+  text-align: center;
+  background-color: white;
+}
+
+.title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.subtitle {
+  color: #666;
+  margin-bottom: 3.5rem;
+  font-size: 1rem;
+}
+
+/* --- THE GRID LOGIC --- */
+.grid {
+  display: grid;
+  /* Default: 1 Row of 6 Boxes */
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1.2rem;
+  width: 100%;
+}
+
+.card {
+  background: #ffffff;
+  padding: 2.5rem 1rem;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.06);
+  border-color: #F77F00;
+}
+
+.iconWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.label {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #003049;
+  line-height: 1.2;
+}
+
+/* --- RESPONSIVE BREAKPOINTS --- */
+
+/* Screen reduces: 1 row of 6 becomes 2 rows of 3 */
+@media (max-width: 1200px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Screen reduces more: 3 rows of 2 per row */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  
+  .section {
+    padding: 3rem 5%;
+  }
+}
+
+/* Final Stage: 6 rows of 1 box per row */
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .card {
+    padding: 2rem 1rem;
+  }
+}

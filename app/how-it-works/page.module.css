@@ -1,0 +1,204 @@
+.pageWrapper {
+  background-color: white;
+  min-height: 100vh;
+}
+
+/* --- HEADER --- */
+.header {
+  background: linear-gradient(180deg, #0F4C5C 0%, #09343F 100%);
+  padding: 4rem 5% 5rem;
+  text-align: center;
+  color: white;
+}
+
+.title {
+  font-size: 2.2rem;
+  margin-bottom: 0.8rem;
+  font-weight: 700;
+}
+
+.subtitle {
+  opacity: 0.9;
+  font-size: 1.1rem;
+}
+
+/* --- 5 STEPS SECTION --- */
+.stepsSection {
+  padding: 0 5%;
+  margin-top: -3rem; /* Overlap effect if desired, or set to 0 */
+  margin-bottom: 5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.stepsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 800px;
+}
+
+.stepCard {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  display: flex;
+  gap: 1.5rem;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  border: 1px solid #f0f0f0;
+  align-items: flex-start;
+}
+
+.stepNumber {
+  background-color: #0F4C5C;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.1rem;
+  flex-shrink: 0; /* Prevents circle from squishing */
+}
+
+.stepContent h3 {
+  color: #333;
+  margin: 0 0 0.5rem 0;
+  font-size: 1.2rem;
+}
+
+.stepContent p {
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.stepTag {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #0F4C5C;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+/* --- 3 WAYS SECTION --- */
+.methodsSection {
+  background-color: #E8F4F8; /* Light blue bg from screenshot */
+  padding: 5rem 5%;
+  text-align: center;
+}
+
+.sectionTitle {
+  color: #333;
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+  font-weight: 700;
+}
+
+.methodsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.methodCard {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: left;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+}
+
+.methodCard h3 {
+  color: #333;
+  margin-bottom: 0.8rem;
+  font-size: 1.2rem;
+}
+
+.methodDesc {
+  color: #666;
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.4;
+}
+
+.featureList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.featureList li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.85rem;
+  color: #555;
+  margin-bottom: 0.6rem;
+}
+
+.featureList li svg {
+  color: #0F4C5C; /* Checkmark color */
+}
+
+/* --- CTA SECTION --- */
+.ctaSection {
+  padding: 5rem 5%;
+  text-align: center;
+  background: white;
+}
+
+.ctaSection h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.ctaSection p {
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.ctaBtn {
+  display: inline-block;
+  background-color: #F4A261;
+  color: white;
+  padding: 15px 40px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: transform 0.2s;
+}
+
+.ctaBtn:hover {
+  transform: translateY(-2px);
+  background-color: #e08e4d;
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 600px) {
+  .header {
+    padding: 3rem 5% 4rem;
+  }
+  
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .stepCard {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.5rem;
+  }
+  
+  .methodsGrid {
+    grid-template-columns: 1fr; /* Force stack on mobile */
+  }
+}

@@ -1,0 +1,106 @@
+.container {
+  padding: 5rem 5%;
+  text-align: center;
+  background-color: white;
+}
+
+/* Gray background for the second section */
+.grayBg {
+  background-color: #f9f9f9;
+}
+
+.title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  color: #666;
+  font-size: 0.95rem;
+  margin-bottom: 3rem;
+}
+
+/* Grid for Course Categories (4 columns) */
+.categoryGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+/* Grid for Accessibility (4 columns, wider gap) */
+.accessGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid #eee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  border-color: #0F4C5C;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+.cardIcon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.cardLabel {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.viewAllBtn {
+  background-color: #0F4C5C;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 5px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.linkText {
+  color: #0F4C5C;
+  text-decoration: underline;
+  font-weight: 600;
+  margin-top: 2rem;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 1024px) {
+  .categoryGrid, .accessGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .categoryGrid, .accessGrid {
+    grid-template-columns: 1fr;
+  }
+}
